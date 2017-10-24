@@ -1,0 +1,2948 @@
+@import "https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900"
+
+html
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+  font-size: 14px
+  box-sizing: border-box
+  height: 100%
+  input
+    &[type=button]
+      -webkit-appearance: button
+      cursor: pointer
+    &[disabled]
+      cursor: default
+      opacity: .5
+
+body
+  margin: 0
+  color: #000
+  font-family: Lato,sans-serif
+  font-size: 13px
+  line-height: 1.6
+  font-weight: 400
+  height: 100%
+  letter-spacing: 2px
+  background: #fff
+
+#colophon a, #content a
+  color: #000 !important
+  text-decoration: none
+  &:hover
+    color: #000 !important
+    text-decoration: none
+
+a:focus
+  outline: none !important
+
+.site
+  .skip-link
+    background-color: #f1f1f1
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2)
+    color: #21759b
+    display: block
+    font-size: 14px
+    font-weight: 700
+    left: -9999em
+    outline: none
+    padding: 15px 23px 14px
+    text-decoration: none
+    text-transform: none
+    top: -9999em
+    &:focus
+      clip: auto
+      height: auto
+      left: 6px
+      top: 7px
+      width: auto
+      z-index: 100000
+  .avatar
+    border-radius: 50%
+
+h1, h2, h3
+  line-height: 1.5
+  clear: both
+  font-weight: 700
+  margin: 0
+  text-rendering: optimizeLegibility
+
+h4
+  line-height: 1.5
+  clear: both
+  font-weight: 400
+  margin: 0
+  text-rendering: optimizeLegibility
+  text-transform: uppercase
+
+h5
+  line-height: 1.5
+  clear: both
+  font-weight: 700
+  margin: 0
+  text-rendering: optimizeLegibility
+
+h6
+  line-height: 1.5
+  clear: both
+  font-weight: 400
+  margin: 0
+  text-rendering: optimizeLegibility
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary
+  display: block
+
+audio
+  display: inline-block
+  vertical-align: baseline
+  &:not([controls])
+    display: none
+    height: 0
+
+canvas, progress
+  display: inline-block
+  vertical-align: baseline
+
+video
+  display: inline-block
+  vertical-align: baseline
+  margin-bottom: 1.75em
+  max-width: 100%
+  vertical-align: middle
+
+[hidden], template
+  display: none
+
+a
+  background-color: transparent
+  color: #000
+  text-decoration: none
+  &:hover, &:focus, &:active
+    color: #000
+    outline: 0
+    text-decoration: none
+
+abbr[title]
+  border-bottom: 1px dotted
+
+b, strong
+  font-weight: 700
+
+small
+  font-size: 80%
+
+sub
+  font-size: 75%
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+  bottom: -.25em
+
+sup
+  font-size: 75%
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+  top: -.5em
+
+img
+  border: 0
+  height: auto
+  max-width: 100%
+  vertical-align: middle
+
+svg:not(:root)
+  overflow: hidden
+
+hr
+  box-sizing: content-box
+  background-color: #d1d1d1
+  border: 0
+  height: 1px
+  margin: 0 0 1.75em
+
+code
+  font-size: 1em
+  background-color: #d1d1d1
+  padding: .125em .25em
+
+kbd
+  font-size: 1em
+
+pre
+  font-size: 1em
+  border: 1px solid #d1d1d1
+  font-size: 16px
+  font-size: 1rem
+  line-height: 1.3125
+  margin: 0 0 1.75em
+  max-width: 100%
+  overflow: auto
+  padding: 1.75em
+  white-space: pre
+  white-space: pre-wrap
+  word-wrap: break-word
+
+samp
+  font-size: 1em
+
+label
+  display: inline
+  font-weight: 400
+  margin-bottom: 5px
+  max-width: 100%
+
+button
+  color: inherit
+  font: inherit
+  margin: 0
+  overflow: visible
+  max-width: 100%
+  -webkit-appearance: button
+  cursor: pointer
+  color: #000
+  font-size: 16px
+  font-size: 1rem
+  line-height: 1.75
+  letter-spacing: 1px
+  background: #1a1a1a
+  border: 0
+  border-radius: 2px
+  font-weight: 700
+  letter-spacing: .046875em
+  line-height: 1
+  padding: .84375em .875em .78125em
+  text-transform: uppercase
+  &::-moz-focus-inner
+    border: 0
+    padding: 0
+
+input
+  background: #eee
+  margin: 0
+  max-width: 100%
+  line-height: 1.75
+  letter-spacing: 1px
+  margin: 0 0 10px
+  line-height: normal
+  border: none
+  width: 100%
+  padding: 10px
+  &::-moz-focus-inner
+    border: 0
+    padding: 0
+
+optgroup
+  color: inherit
+  font: inherit
+  margin: 0
+  font-weight: 700
+
+select
+  color: inherit
+  font: inherit
+  margin: 0
+  text-transform: none
+  max-width: 100%
+  font-size: 15px
+  line-height: 1.75
+  letter-spacing: 1px
+
+textarea
+  margin: 0
+  max-width: 100%
+  background: #eee
+  overflow: auto
+  vertical-align: top
+  line-height: 1.75
+  letter-spacing: 1px
+  border: none
+  border-radius: 0
+  padding: 10px
+  width: 100%
+  height: 110px
+  &:focus
+    background: #fff
+    color: #000
+    outline: 0
+
+input
+  &:focus
+    background: #fff
+    color: #000
+    outline: 0
+  &[type=reset]
+    -webkit-appearance: button
+    cursor: pointer
+    border: 0
+    border-radius: 2px
+    color: #fff
+    font-weight: 700
+    letter-spacing: .046875em
+    line-height: 1
+    padding: .84375em .875em .78125em
+    text-transform: uppercase
+  &[type=submit]
+    -webkit-appearance: button
+    background: none
+    color: #000
+    border: 1px solid #000
+    border-radius: 0
+    cursor: pointer
+    font-size: 10px
+    float: right
+    line-height: 1
+    margin-top: 10px
+    padding: 8px 20px
+    text-transform: uppercase
+    width: auto
+
+button[disabled]
+  cursor: default
+  opacity: .5
+  &:hover, &:focus
+    background: #1a1a1a
+    border: 0
+    border-radius: 2px
+    color: #fff
+    font-weight: 700
+    letter-spacing: .046875em
+    line-height: 1
+    padding: .84375em .875em .78125em
+    text-transform: uppercase
+
+input
+  &[type=checkbox], &[type=radio]
+    box-sizing: border-box
+    margin-right: .4375em
+    padding: 0
+  &[type=number]
+    background: #fff
+    border: 1px solid #000
+    border-radius: 0
+    padding: .625em .4375em
+    width: 100%
+    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button
+      height: auto
+    &:focus
+      background-color: #fff
+      border-color: #007acc
+      color: #000
+      outline: 0
+  &[type=search]
+    -webkit-appearance: textfield
+    border: 1px solid #d1d1d1
+    border-radius: 2px
+    padding: .625em .4375em
+    width: 100%
+    &::-webkit-search-cancel-button, &::-webkit-search-decoration
+      -webkit-appearance: none
+    &:focus
+      background-color: #fff
+      border-color: #007acc
+      color: #000
+      outline: 0
+
+fieldset
+  border: 1px solid #d1d1d1
+  margin: 0 0 1.75em
+  min-width: inherit
+  padding: .875em
+  &:last-child >
+    margin-bottom: 0
+
+legend
+  border: 0
+  padding: 0
+
+.menu-item-has-children a:after
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  display: inline-block
+  font-family: Genericons
+  font-size: 20px
+  font-style: normal
+  font-variant: normal
+  font-weight: 400
+  line-height: 1
+  speak: none
+  text-align: center
+  text-decoration: inherit
+  text-transform: none
+  vertical-align: top
+
+.social-navigation
+  a
+    color: #000
+    display: block
+    position: relative
+    &:before
+      -moz-osx-font-smoothing: grayscale
+      -webkit-font-smoothing: antialiased
+      display: inline-block
+      font-family: Genericons
+      font-size: 20px
+      font-style: normal
+      font-variant: normal
+      font-weight: 400
+      line-height: 1
+      speak: none
+      text-decoration: inherit
+      text-transform: none
+      vertical-align: top
+      content: "\f415"
+      height: 30px
+      line-height: 30px
+      text-align: center
+      width: 25px
+    &:hover
+      text-decoration: underline
+      &:before
+        color: #000
+    &:focus:before
+      color: #000
+  ul
+    list-style: none
+    margin: 0 0 -.4375em
+  li
+    display: inline-block
+  a
+    &[href*="codepen.io"]:before
+      content: "\f216"
+    &[href*="digg.com"]:before
+      content: "\f221"
+    &[href*="dribbble.com"]:before
+      content: "\f201"
+    &[href*="dropbox.com"]:before
+      content: "\f225"
+    &[href*="facebook.com"]:before
+      content: "\f204"
+    &[href*="flickr.com"]:before
+      content: "\f211"
+    &[href*="foursquare.com"]:before
+      content: "\f226"
+    &[href*="plus.google.com"]:before
+      content: "\f206"
+    &[href*="github.com"]:before
+      content: "\f200"
+    &[href*="instagram.com"]:before
+      content: "\f215"
+    &[href*="linkedin.com"]:before
+      content: "\f208"
+    &[href*="path.com"]:before
+      content: "\f219"
+    &[href*="pinterest.com"]:before
+      content: "\f210"
+    &[href*="getpocket.com"]:before
+      content: "\f224"
+    &[href*="polldaddy.com"]:before
+      content: "\f217"
+    &[href*="reddit.com"]:before
+      content: "\f222"
+    &[href*="skype.com"]:before
+      content: "\f220"
+    &[href*="stumbleupon.com"]:before
+      content: "\f223"
+    &[href*="tumblr.com"]:before
+      content: "\f214"
+    &[href*="twitter.com"]:before
+      content: "\f202"
+    &[href*="vimeo.com"]:before
+      content: "\f212"
+    &[href*="wordpress.com"]:before, &[href*="wordpress.org"]:before
+      content: "\f205"
+    &[href*="youtube.com"]:before
+      content: "\f213"
+    &[href^="mailto:"]:before
+      content: "\f410"
+    &[href*="spotify.com"]:before
+      content: "\f515"
+    &[href*="twitch.tv"]:before
+      content: "\f516"
+    &[href$="/feed/"]:before
+      content: "\f413"
+
+.dropdown-toggle
+  background-color: transparent
+  border: 0
+  border-radius: 0
+  color: #000
+  content: ""
+  height: 48px
+  padding: 0
+  position: absolute
+  right: 0
+  text-transform: none
+  top: 0
+  width: 48px
+  &:after
+    -moz-osx-font-smoothing: grayscale
+    -webkit-font-smoothing: antialiased
+    display: inline-block
+    font-family: Genericons
+    font-size: 20px
+    font-style: normal
+    font-variant: normal
+    font-weight: 400
+    line-height: 1
+    speak: none
+    text-align: center
+    text-decoration: inherit
+    text-transform: none
+    vertical-align: top
+    border: 0 solid #d1d1d1
+    border-left-width: 1px
+    content: "\f431"
+    font-size: 24px
+    left: 1px
+    position: relative
+    width: 48px
+  &:hover
+    background-color: transparent
+    color: #000
+  &:focus
+    background-color: transparent
+    color: #000
+    outline: thin dotted
+    outline-offset: -1px
+    &:after
+      border-color: transparent
+
+.comment-author
+  color: #000
+  font-size: 14px
+  font-weight: 600
+  text-transform: uppercase
+  .avatar
+    float: left
+    height: 28px
+    margin-right: .875em
+    position: relative
+    width: 28px
+    display: none !important
+
+.comment-form
+  padding-top: 1.75em
+  input
+    margin-bottom: 0
+  p
+    margin-bottom: 15px
+    text-align: center
+  input[type=submit]
+    margin-top: 0
+  label
+    color: #686868
+    display: block
+    font-size: 13px
+    font-size: .8125rem
+    letter-spacing: .076923077em
+    line-height: 1.6153846154
+    margin-bottom: .5384615385em
+    text-transform: uppercase
+    display: none
+
+.comment-reply-title
+  font-size: 14px
+  margin-bottom: 20px
+  text-align: center
+  text-transform: uppercase
+  small
+    font-size: 100%
+    a
+      border: 0
+      float: right
+      height: 32px
+      overflow: hidden
+      width: 26px
+      &:before
+        -moz-osx-font-smoothing: grayscale
+        -webkit-font-smoothing: antialiased
+        display: inline-block
+        font-family: Genericons
+        font-size: 20px
+        font-style: normal
+        font-variant: normal
+        font-weight: 400
+        line-height: 1
+        speak: none
+        text-align: center
+        text-decoration: inherit
+        text-transform: none
+        vertical-align: top
+        content: "\f405"
+        font-size: 32px
+        position: relative
+        top: -5px
+      &:hover, &:focus
+        color: #000
+  &:after
+    clear: both
+    content: ""
+    display: table
+    margin: 10px 0
+
+.pagination
+  border-top: 4px solid #1a1a1a
+  font-size: 19px
+  font-size: 1.1875rem
+  margin: 0 7.6923% 2.947368421em
+  min-height: 56px
+  position: relative
+  .prev
+    background-color: #1a1a1a
+    color: #fff
+    display: inline-block
+    height: 52px
+    margin: 0
+    overflow: hidden
+    padding: 0
+    position: absolute
+    top: 0
+    width: 52px
+    z-index: 2
+    right: 54px
+    &:before
+      -moz-osx-font-smoothing: grayscale
+      -webkit-font-smoothing: antialiased
+      display: inline-block
+      font-family: Genericons
+      font-size: 20px
+      font-style: normal
+      font-variant: normal
+      font-weight: 400
+      line-height: 1
+      speak: none
+      text-align: center
+      text-decoration: inherit
+      text-transform: none
+      vertical-align: top
+      font-size: 32px
+      height: 53px
+      line-height: 52px
+      position: relative
+      width: 53px
+      content: "\f430"
+      left: -1px
+      top: -1px
+    &:hover
+      background-color: #007acc
+      color: #fff
+    &:focus
+      background-color: #007acc
+      color: #fff
+      outline: 0
+  .next
+    background-color: #1a1a1a
+    color: #fff
+    display: inline-block
+    height: 52px
+    margin: 0
+    overflow: hidden
+    padding: 0
+    position: absolute
+    top: 0
+    width: 52px
+    z-index: 2
+    right: 0
+    &:before
+      -moz-osx-font-smoothing: grayscale
+      -webkit-font-smoothing: antialiased
+      display: inline-block
+      font-family: Genericons
+      font-size: 20px
+      font-style: normal
+      font-variant: normal
+      font-weight: 400
+      line-height: 1
+      speak: none
+      text-align: center
+      text-decoration: inherit
+      text-transform: none
+      vertical-align: top
+      font-size: 32px
+      height: 53px
+      line-height: 52px
+      position: relative
+      width: 53px
+      content: "\f429"
+      right: -1px
+      top: -1px
+    &:hover
+      background-color: #007acc
+      color: #fff
+    &:focus
+      background-color: #007acc
+      color: #fff
+      outline: 0
+  .nav-links
+    padding-right: 106px
+    position: relative
+    &:before
+      -moz-osx-font-smoothing: grayscale
+      -webkit-font-smoothing: antialiased
+      display: inline-block
+      font-family: Genericons
+      font-size: 20px
+      font-style: normal
+      font-variant: normal
+      font-weight: 400
+      line-height: 1
+      speak: none
+      text-align: center
+      text-decoration: inherit
+      text-transform: none
+      vertical-align: top
+      color: #fff
+      font-size: 32px
+      line-height: 51px
+      opacity: .3
+      position: absolute
+      width: 52px
+      z-index: 1
+      content: "\f429"
+      right: -1px
+    &:after
+      -moz-osx-font-smoothing: grayscale
+      -webkit-font-smoothing: antialiased
+      display: inline-block
+      font-family: Genericons
+      font-size: 20px
+      font-style: normal
+      font-variant: normal
+      font-weight: 400
+      line-height: 1
+      speak: none
+      text-align: center
+      text-decoration: inherit
+      text-transform: none
+      vertical-align: top
+      color: #fff
+      font-size: 32px
+      line-height: 51px
+      opacity: .3
+      position: absolute
+      width: 52px
+      z-index: 1
+      content: "\f430"
+      right: 55px
+  &:before
+    background-color: #1a1a1a
+    content: ""
+    height: 52px
+    position: absolute
+    top: 0
+    width: 52px
+    z-index: 0
+    right: 0
+  &:after
+    background-color: #1a1a1a
+    content: ""
+    height: 52px
+    position: absolute
+    top: 0
+    width: 52px
+    z-index: 0
+    right: 54px
+  a
+    &:hover, &:focus
+      color: #000
+  .current
+    display: inline-block
+    font-weight: 700
+    .screen-reader-text
+      position: static !important
+  .page-numbers
+    display: none
+    letter-spacing: .013157895em
+    line-height: 1
+    margin: 0 .7368421053em 0 -.7368421053em
+    padding: .8157894737em .7368421053em .3947368421em
+    text-transform: uppercase
+
+.search-submit
+  border-radius: 0 2px 2px 0
+  bottom: 0
+  overflow: hidden
+  padding: 0
+  position: absolute
+  right: 0
+  top: 0
+  width: 42px
+  &:before
+    -moz-osx-font-smoothing: grayscale
+    -webkit-font-smoothing: antialiased
+    display: inline-block
+    font-family: Genericons
+    font-size: 20px
+    font-style: normal
+    font-variant: normal
+    font-weight: 400
+    line-height: 1
+    speak: none
+    text-align: center
+    text-decoration: inherit
+    text-transform: none
+    vertical-align: top
+    content: "\f400"
+    font-size: 24px
+    left: 2px
+    line-height: 42px
+    position: relative
+    width: 40px
+
+.entry-content
+  h1
+    font-size: 36px
+    line-height: 1.2727272727
+    margin-top: .8484848485em
+    margin-bottom: .8484848485em
+    &:first-child
+      margin-top: 0
+  h2
+    font-size: 30px
+    font-weight: 300
+    line-height: 1.25
+    margin-bottom: 20px
+    margin-top: 20px
+    &:first-child
+      margin-top: 0
+  h3
+    font-size: 24px
+    line-height: 1.2173913043
+    margin-top: .8484848485em
+    margin-bottom: .8484848485em
+    &:first-child
+      margin-top: 0
+  h4
+    font-weight: 600
+    font-size: 19px
+    font-size: 1.1875rem
+    line-height: 1.1052631579
+    margin-top: .8484848485em
+    margin-bottom: .8484848485em
+    letter-spacing: .140625em
+    text-transform: uppercase
+    &:first-child
+      margin-top: 0
+  h5
+    font-size: 14px
+    line-height: 1.1052631579
+    margin-top: .8484848485em
+    margin-bottom: 30px
+    &:first-child
+      margin-top: 0
+  h6
+    font-size: 19px
+    font-size: 1.1875rem
+    line-height: 1.1052631579
+    margin-top: .8484848485em
+    margin-bottom: .8484848485em
+    font-style: italic
+    &:first-child
+      margin-top: 0
+  a
+    &:hover, &:focus
+      box-shadow: none
+    img
+      display: block
+  &:before
+    content: ""
+    display: table
+  &:after
+    content: ""
+    display: table
+    clear: both
+  &:last-child >
+    margin-bottom: 0
+  .author-title
+    clear: none
+    font-size: 16px
+    font-size: 1rem
+    font-weight: 900
+    line-height: 1.75
+    margin: 0
+  .wp-smiley
+    border: none
+    margin-top: 0
+    margin-bottom: 0
+    padding: 0
+  .wp-audio-shortcode a, .wp-playlist a
+    box-shadow: none
+  blockquote:first-child
+    margin-top: 0
+  li
+    margin-bottom: 15px
+    padding-left: 25px
+    position: relative
+    &:before
+      content: "X"
+      left: 0
+      position: absolute
+
+.entry-summary
+  border-color: #d1d1d1
+  h1
+    font-size: 36px
+    line-height: 1.2727272727
+    margin-top: .8484848485em
+    margin-bottom: .8484848485em
+    &:first-child
+      margin-top: 0
+  h2
+    font-size: 30px
+    font-weight: 300
+    line-height: 1.25
+    margin-bottom: 20px
+    margin-top: 20px
+    &:first-child
+      margin-top: 0
+  h3
+    font-size: 24px
+    line-height: 1.2173913043
+    margin-top: .8484848485em
+    margin-bottom: .8484848485em
+    &:first-child
+      margin-top: 0
+  h4
+    font-weight: 600
+    font-size: 19px
+    font-size: 1.1875rem
+    line-height: 1.1052631579
+    margin-top: .8484848485em
+    margin-bottom: .8484848485em
+    letter-spacing: .140625em
+    text-transform: uppercase
+    &:first-child
+      margin-top: 0
+  h5
+    font-size: 19px
+    font-size: 1.1875rem
+    line-height: 1.1052631579
+    margin-top: .8484848485em
+    margin-bottom: .8484848485em
+    &:first-child
+      margin-top: 0
+  h6
+    font-size: 19px
+    font-size: 1.1875rem
+    line-height: 1.1052631579
+    margin-top: .8484848485em
+    margin-bottom: .8484848485em
+    font-style: italic
+    &:first-child
+      margin-top: 0
+  a
+    &:hover, &:focus
+      box-shadow: none
+    img
+      display: block
+  &:before
+    content: ""
+    display: table
+  &:after
+    content: ""
+    display: table
+    clear: both
+  &:last-child >
+    margin-bottom: 0
+  .wp-smiley
+    border: none
+    margin-top: 0
+    margin-bottom: 0
+    padding: 0
+
+.comment-content
+  h1
+    font-size: 36px
+    line-height: 1.2727272727
+    margin-top: .8484848485em
+    margin-bottom: .8484848485em
+    &:first-child
+      margin-top: 0
+  h2
+    font-size: 30px
+    font-weight: 300
+    line-height: 1.25
+    margin-bottom: 20px
+    margin-top: 20px
+    &:first-child
+      margin-top: 0
+  h3
+    font-size: 24px
+    line-height: 1.2173913043
+    margin-top: .8484848485em
+    margin-bottom: .8484848485em
+    &:first-child
+      margin-top: 0
+  h4
+    font-weight: 600
+    font-size: 19px
+    font-size: 1.1875rem
+    line-height: 1.1052631579
+    margin-top: .8484848485em
+    margin-bottom: .8484848485em
+    letter-spacing: .140625em
+    text-transform: uppercase
+    &:first-child
+      margin-top: 0
+  h5
+    font-size: 19px
+    font-size: 1.1875rem
+    line-height: 1.1052631579
+    margin-top: .8484848485em
+    margin-bottom: .8484848485em
+    &:first-child
+      margin-top: 0
+  h6
+    font-size: 19px
+    font-size: 1.1875rem
+    line-height: 1.1052631579
+    margin-top: .8484848485em
+    margin-bottom: .8484848485em
+    font-style: italic
+    &:first-child
+      margin-top: 0
+  a
+    &:hover, &:focus
+      box-shadow: none
+    img
+      display: block
+  &:before
+    content: ""
+    display: table
+  &:after
+    content: ""
+    display: table
+    clear: both
+  &:last-child >
+    margin-bottom: 0
+  ul, ol
+    margin: 0 0 1.5em 1.25em
+  li >
+    ul, ol
+      margin-bottom: 0
+  .wp-smiley
+    border: none
+    margin-top: 0
+    margin-bottom: 0
+    padding: 0
+
+.entry-intro h4
+  font-weight: 600
+
+p
+  margin: 0 0 1.75em
+  >
+    embed, iframe, object, video
+      margin-bottom: 0
+
+dfn, cite, em, i
+  font-style: italic
+
+blockquote
+  border: none
+  font-size: 30px
+  padding: 0
+  text-align: center
+  line-height: 1.3
+  quotes: none
+  margin: 30px 0
+  &:before
+    content: ""
+    display: table
+  &:after
+    content: ""
+    display: table
+    clear: both
+  p
+    margin-bottom: 1.4736842105em
+  cite
+    color: #000
+    display: block
+    font-size: 16px
+    font-size: 1rem
+    line-height: 1.75
+    font-style: normal
+    &:before
+      content: "\2014\00a0"
+  small
+    color: #000
+    display: block
+    font-size: 16px
+    font-size: 1rem
+    line-height: 1.75
+    &:before
+      content: "\2014\00a0"
+  em, i
+    font-style: normal
+  strong, b
+    font-weight: 400
+  &:last-child >
+    margin-bottom: 0
+
+q
+  quotes: none
+  &:before, &:after
+    content: ""
+
+address
+  font-style: italic
+  margin: 0 0 1.75em
+
+abbr, acronym
+  border-bottom: 1px dotted #d1d1d1
+  cursor: help
+
+mark, ins
+  background: #007acc
+  color: #fff
+  padding: .125em .25em
+  text-decoration: none
+
+big
+  font-size: 125%
+
+*
+  box-sizing: inherit
+  &:before, &:after
+    box-sizing: inherit
+
+ul
+  margin: 0 0 1.75em 1.25em
+  padding: 0
+  list-style: disc
+
+ol
+  margin: 0 0 1.75em 1.25em
+  padding: 0
+  list-style: decimal
+  margin-left: 1.5em
+
+li >
+  ul, ol
+    margin-bottom: 0
+
+dl
+  margin: 0 0 1.75em
+
+dt
+  font-weight: 700
+
+dd
+  margin: 0 0 1.75em
+
+del
+  opacity: .8
+
+table
+  border: 1px solid #d1d1d1
+  border-collapse: separate
+  border-spacing: 0
+  border-width: 1px 0 0 1px
+  margin: 0 0 1.75em
+  table-layout: fixed
+  width: 100%
+
+th
+  border: 1px solid #d1d1d1
+  font-weight: 400
+  text-align: left
+  border-width: 0 1px 1px 0
+  font-weight: 700
+  padding: .4375em
+
+td
+  border: 1px solid #d1d1d1
+  font-weight: 400
+  text-align: left
+  border-width: 0 1px 1px 0
+  padding: .4375em
+
+caption
+  font-weight: 400
+  text-align: left
+
+form
+  margin-bottom: 15px
+
+\::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder
+  opacity: 1
+
+.comments-section
+  &:after
+    clear: both
+    content: ""
+    display: table
+  .reply
+    display: none !important
+
+input
+  &[type=button]
+    background: #1a1a1a
+    border: 0
+    border-radius: 2px
+    color: #fff
+    font-weight: 700
+    letter-spacing: .046875em
+    line-height: 1
+    padding: .84375em .875em .78125em
+    text-transform: uppercase
+    &:hover
+      background: #007acc
+    &:focus
+      background: #007acc
+      outline: thin dotted
+      outline-offset: -4px
+    &[disabled]
+      &:hover, &:focus
+        background: #1a1a1a
+        border: 0
+        border-radius: 2px
+        color: #fff
+        font-weight: 700
+        letter-spacing: .046875em
+        line-height: 1
+        padding: .84375em .875em .78125em
+        text-transform: uppercase
+  &[type=reset][disabled]
+    &:hover, &:focus
+      background: #1a1a1a
+      border: 0
+      border-radius: 2px
+      color: #fff
+      font-weight: 700
+      letter-spacing: .046875em
+      line-height: 1
+      padding: .84375em .875em .78125em
+      text-transform: uppercase
+  &[type=submit][disabled]
+    &:hover, &:focus
+      background: #1a1a1a
+      border: 0
+      border-radius: 2px
+      color: #fff
+      font-weight: 700
+      letter-spacing: .046875em
+      line-height: 1
+      padding: .84375em .875em .78125em
+      text-transform: uppercase
+
+.post-password-form
+  margin-bottom: 1.75em
+  label
+    color: #000
+    display: block
+    font-size: 13px
+    font-size: .8125rem
+    letter-spacing: .076923077em
+    line-height: 1.6153846154
+    margin-bottom: 1.75em
+    text-transform: uppercase
+  input[type=password]
+    margin-top: .4375em
+  &:last-child >
+    margin-bottom: 0
+
+.search-form
+  position: relative
+
+input[type=search].search-field
+  border-radius: 2px 0 0 2px
+  width: calc(100% - 42px)
+
+.taxonomy-description
+  color: #686868
+  font-size: 13px
+  font-size: .8125rem
+  line-height: 1.6153846154
+  a
+    &:hover, &:focus
+      box-shadow: none
+  p
+    margin: .5384615385em 0 1.6153846154em
+  &:last-child >
+    margin-bottom: 0
+
+.logged-in-as
+  font-size: 13px
+  font-size: .8125rem
+  line-height: 1.6153846154
+  margin-bottom: 2.1538461538em
+  a
+    &:hover, &:focus
+      box-shadow: none
+
+.pingback
+  .comment-body > a
+    &:hover, &:focus
+      box-shadow: none
+  .edit-link
+    color: #686868
+    font-size: 13px
+    font-size: .8125rem
+    line-height: 1.6153846154
+    display: inline-block
+    &:before
+      content: "\002f"
+      display: inline-block
+      opacity: .7
+      padding: 0 .538461538em
+  .comment-edit-link
+    color: #686868
+    &:hover, &:focus
+      color: #000
+
+.textwidget
+  a
+    &:hover, &:focus
+      box-shadow: none
+    img
+      display: block
+  &:before
+    content: ""
+    display: table
+  &:after
+    content: ""
+    display: table
+    clear: both
+  h4
+    letter-spacing: .140625em
+    text-transform: uppercase
+    &:first-child
+      margin-top: 0
+  h6
+    font-style: italic
+    &:first-child
+      margin-top: 0
+  h1:first-child, h2:first-child, h3:first-child, h5:first-child
+    margin-top: 0
+  &:last-child >
+    margin-bottom: 0
+  .wp-smiley
+    border: none
+    margin-top: 0
+    margin-bottom: 0
+    padding: 0
+
+.site-header-menu
+  clear: both
+  display: none
+  -webkit-flex: 0 1 100%
+  -ms-flex: 0 1 100%
+  flex: 0 1 100%
+  float: right
+  max-width: 180px
+  padding: 60px 10px 20px
+  position: absolute
+  right: 0
+  top: 0
+  width: 100%
+
+.menu-toggle.toggled-on .genericon-menu:before
+  content: "\f406"
+
+.site-header-menu.toggled-on
+  background: #eeeef2
+  display: block
+
+.main-navigation
+  ul
+    list-style: none
+    margin: 0
+    ul
+      display: none
+      margin-left: .875em
+    .toggled-on
+      display: block
+  li
+    display: block
+    margin: 10px 0
+    position: relative
+  a
+    color: #000
+    display: inline-block
+    font-weight: 600
+    font-size: 14px
+    line-height: 1.3125
+    padding: 5px 10px
+    text-transform: uppercase
+    &:hover, &:focus
+      background: #fde4e4
+      color: #fff
+      text-decoration: none
+  .current-menu-item > a
+    background: #fde4e4
+    color: #fff
+  .menu-item-has-children > a
+    margin-right: 56px
+
+.dropdown-toggle.toggled-on:after
+  content: "\f432"
+
+.site-header .main-navigation + .social-navigation
+  margin-top: 1em
+
+.site-branding
+  max-width: 100%
+  overflow: hidden
+  .site-title a
+    color: #000
+    &:hover, &:focus
+      color: #000
+
+.menu-social-links-container a[href*="wordpress.org"]:before
+  content: "\f205"
+
+.comments-title
+  -webkit-hyphens: auto
+  -moz-hyphens: auto
+  -ms-hyphens: auto
+  hyphens: auto
+  border-top: 4px solid #1a1a1a
+  font-size: 23px
+  font-size: 1.4375rem
+  font-weight: 700
+  line-height: 1.3125
+  padding-top: 1.217391304em
+  margin-bottom: 1.217391304em
+  + .comment-navigation
+    border-bottom: 0
+    margin-bottom: 0
+
+.says, .screen-reader-text
+  clip: rect(1px, 1px, 1px, 1px)
+  height: 1px
+  overflow: hidden
+  position: absolute !important
+  width: 1px
+  word-wrap: normal !important
+
+.logged-in
+  .site .skip-link
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2)
+  .comments-area .comment-form-comment
+    width: 100%
+
+.alignleft
+  float: left
+  margin: .375em 1.75em 1.75em 0
+
+.alignright
+  float: right
+  margin: .375em 0 1.75em 1.75em
+
+.aligncenter
+  clear: both
+  display: block
+  margin: 0 auto 1.75em
+
+blockquote
+  &.alignleft
+    margin: .3157894737em 1.4736842105em 1.473684211em 0
+  &.alignright
+    margin: .3157894737em 0 1.473684211em 1.4736842105em
+  &.aligncenter
+    margin-bottom: 1.473684211em
+
+.clear, .site-content
+  &:before
+    content: ""
+    display: table
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+.site-main
+  > article
+    margin-bottom: 3.5em
+    position: relative
+    &:before
+      content: ""
+      display: table
+    &:after
+      content: ""
+      display: table
+      clear: both
+  &:last-child >
+    margin-bottom: 0
+
+.primary-menu, .social-links-menu
+  &:before
+    content: ""
+    display: table
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+.widget
+  margin-bottom: 1.75em
+  padding-top: 1.75em
+  &:last-child >
+    margin-bottom: 0
+  .widget-title
+    font-size: 30px
+    letter-spacing: .046875em
+    line-height: 1.3125
+    margin: 0 0 10px
+    text-align: center
+    text-transform: uppercase
+    &:empty
+      margin-bottom: 0
+
+.widget-area:last-child >
+  margin-bottom: 0
+
+.widget-title a
+  color: #000
+
+.widget.widget_calendar table
+  margin: 0
+
+.widget_calendar
+  td, th
+    line-height: 2.5625
+    padding: 0
+    text-align: center
+  caption
+    font-weight: 900
+    margin-bottom: 1.75em
+  tbody a
+    background-color: #007acc
+    color: #fff
+    display: block
+    font-weight: 700
+    &:hover, &:focus
+      background-color: #686868
+      color: #fff
+
+.widget_recent_entries
+  .post-date
+    color: #686868
+    display: block
+    font-size: 13px
+    font-size: .8125rem
+    line-height: 1.615384615
+    margin-bottom: .538461538em
+  li:last-child .post-date
+    margin-bottom: 0
+
+.widget_rss
+  .rsswidget img
+    margin-top: -.375em
+  .rss-date, cite
+    color: #686868
+    display: block
+    font-size: 13px
+    font-size: .8125rem
+    font-style: normal
+    line-height: 1.615384615
+    margin-bottom: .538461538em
+  .rssSummary:last-child
+    margin-bottom: 2.1538461538em
+  li:last-child:last-child
+    margin-bottom: 0
+
+.tagcloud a
+  border: 1px solid #d1d1d1
+  border-radius: 2px
+  display: inline-block
+  line-height: 1
+  margin: 0 .1875em .4375em 0
+  padding: .5625em .4375em .5em
+  &:hover, &:focus
+    border-color: #007acc
+    color: #000
+    outline: 0
+
+.content-bottom-widgets
+  &:before
+    content: ""
+    display: table
+  &:after
+    content: ""
+    display: table
+    clear: both
+  .widget-title
+    font-size: 48px
+    font-weight: 300
+    line-height: 1
+    margin-bottom: -20px
+    position: relative
+    z-index: 9
+    text-align: center
+  .widget-area:nth-child(2n+2)
+    padding: 60px 0
+    .widget
+      max-width: 1170px
+      margin-left: auto
+      margin-right: auto
+      .widget-title
+        font-size: 18px
+        font-weight: 600
+        margin: 0 0 20px
+        text-transform: uppercase
+
+#content[tabindex="-1"]:focus
+  outline: 0
+
+.custom-logo-link
+  display: inline-block
+
+.site-title
+  font-size: 23px
+  font-size: 1.4375rem
+  font-weight: 700
+  line-height: 1.2173913043
+  margin: 0
+
+.wp-custom-logo .site-title
+  margin-top: .608695652em
+
+.site-description
+  color: #686868
+  display: none
+  font-size: 13px
+  font-size: .8125rem
+  font-weight: 400
+  line-height: 1.0769230769
+  margin: .538461538em 0 0
+  float: right
+
+.menu-toggle
+  background-color: transparent
+  margin: 1.076923077em 0
+  display: inline-block
+  height: 45px
+  margin: 0
+  top: 10px
+  padding: 0
+  position: relative
+  width: 65px
+  z-index: 9999
+  float: right
+  &:hover
+    background-color: transparent
+    color: #000
+  &:focus
+    background-color: transparent
+    color: #000
+    outline: 0
+  .genericon
+    font-size: 24px
+
+.header-image a
+  display: block
+  &:hover img, &:focus img
+    opacity: .85
+
+.entry-title
+  font-size: 16px
+  -webkit-hyphens: auto
+  -moz-hyphens: auto
+  -ms-hyphens: auto
+  hyphens: auto
+  line-height: 1.5
+  margin-bottom: 20px
+  text-transform: uppercase
+  font-weight: 700
+  &:after
+    clear: both
+    content: ""
+    display: table
+    margin: 5px 0
+  a
+    color: #000
+    &:hover, &:focus
+      color: #000
+
+.single-post-img
+  margin-bottom: 30px
+  img
+    width: 100%
+
+.post-thumbnail img
+  display: block
+
+.no-sidebar .post-thumbnail img
+  margin: 0 auto
+
+a.post-thumbnail
+  &:hover, &:focus
+    opacity: .85
+
+.page-content:last-child >
+  margin-bottom: 0
+
+.more-link
+  white-space: nowrap
+
+.author-info
+  border-color: inherit
+  border-style: solid
+  border-width: 1px 0
+  clear: both
+  padding-top: 1.75em
+  padding-bottom: 1.75em
+
+.author-avatar .avatar
+  float: left
+  height: 42px
+  margin: 0 1.75em 1.75em 0
+  width: 42px
+
+.author-description:last-child >
+  margin-bottom: 0
+
+.author-bio
+  color: #686868
+  font-size: 13px
+  font-size: .8125rem
+  line-height: 1.6153846154
+  margin-bottom: 1.6153846154em
+  overflow: hidden
+
+.author-link
+  white-space: nowrap
+
+.entry-footer
+  color: #686868
+  font-size: 13px
+  font-size: .8125rem
+  line-height: 1.6153846154
+  margin-top: 2.1538461538em
+  &:empty
+    margin: 0
+  a
+    color: #686868
+    &:hover, &:focus
+      color: #000
+  > span:not(:last-child):after
+    content: "\002f"
+    display: inline-block
+    opacity: .7
+    padding: 0 .538461538em
+  .avatar
+    height: 21px
+    margin: -.1538461538em .5384615385em 0 0
+    width: 21px
+
+.sticky-post
+  color: #686868
+  display: block
+  font-size: 13px
+  font-size: .8125rem
+  letter-spacing: .076923077em
+  line-height: 1.6153846154
+  margin-bottom: .5384615385em
+  text-transform: uppercase
+
+.updated:not(.published), .sticky .posted-on, .byline
+  display: none
+
+.single .byline, .group-blog .byline
+  display: inline
+
+.page-header
+  border: none
+  margin: 0 7.6923% 3.5em
+  padding: 0
+  text-align: center
+
+body
+  &.error404 .page-header, &.search-no-results .page-header
+    border-top: 0
+    padding-top: 0
+
+.page-title
+  font-size: 30px
+  line-height: 1.225
+  margin-bottom: 10px
+  text-align: center
+  text-decoration: underline
+
+.page-links
+  clear: both
+  margin: 0 0 1.75em
+  a
+    border: 1px solid #d1d1d1
+    border-radius: 2px
+    display: inline-block
+    font-size: 13px
+    font-size: .8125rem
+    height: 1.8461538462em
+    line-height: 1.6923076923em
+    margin-right: .3076923077em
+    text-align: center
+    width: 1.8461538462em
+    background-color: #1a1a1a
+    border-color: #1a1a1a
+    color: #fff
+    &:hover, &:focus
+      background-color: #007acc
+      border-color: transparent
+      color: #fff
+  >
+    span
+      border: 1px solid #d1d1d1
+      border-radius: 2px
+      display: inline-block
+      font-size: 13px
+      font-size: .8125rem
+      height: 1.8461538462em
+      line-height: 1.6923076923em
+      margin-right: .3076923077em
+      text-align: center
+      width: 1.8461538462em
+    .page-links-title
+      border: 0
+      color: #000
+      height: auto
+      margin: 0
+      padding-right: .6153846154em
+      width: auto
+
+.entry-attachment
+  margin-bottom: 1.75em
+
+.entry-caption
+  color: #686868
+  font-size: 13px
+  font-size: .8125rem
+  font-style: italic
+  line-height: 1.6153846154
+
+  padding-top: 1.0769230769em
+  &:last-child >
+    margin-bottom: 0
+
+.format-aside .entry-title, .format-image .entry-title, .format-video .entry-title, .format-quote .entry-title, .format-gallery .entry-title, .format-status .entry-title, .format-link .entry-title, .format-audio .entry-title, .format-chat .entry-title
+  font-size: 19px
+  font-size: 1.1875rem
+  line-height: 1.473684211
+  margin-bottom: 1.473684211em
+
+.blog .format-status .entry-title, .archive .format-status .entry-title
+  display: none
+
+.comments-area
+  margin-top: 40px
+
+.comment-list
+  list-style: none
+  margin: 80px 0 0
+  clear: both
+  + .comment-respond
+    padding-top: 1.75em
+  article
+    padding: 1.75em 0
+  .pingback, .trackback
+    border-top: 1px solid #d1d1d1
+    padding: 1.75em 0
+  .children
+    list-style: none
+    margin: 0
+    > li
+      padding-left: .875em
+  .comment-form
+    padding-bottom: 1.75em
+  li
+    margin-bottom: 50px
+
+.comment-date
+  font-size: 15px
+  font-weight: 300
+  margin-left: 15px
+  text-transform: uppercase
+
+.comment-metadata
+  a
+    color: #000
+    &:hover, &:focus
+      color: #000
+  .edit-link
+    display: inline-block
+    &:before
+      content: "\002f"
+      display: inline-block
+      opacity: .7
+      padding: 0 .538461538em
+
+.comment-reply-link
+  border: 1px solid #d1d1d1
+  border-radius: 2px
+  color: #000
+  display: inline-block
+  font-size: 13px
+  font-size: .8125rem
+  line-height: 1
+  margin-top: 2.1538461538em
+  padding: .5384615385em .5384615385em .4615384615em
+  &:hover, &:focus
+    border-color: currentColor
+    color: #000
+    outline: 0
+
+.comment-notes
+  font-size: 13px
+  font-size: .8125rem
+  line-height: 1.6153846154
+  margin-bottom: 2.1538461538em
+  display: none
+
+.comment-awaiting-moderation, .form-allowed-tags
+  font-size: 13px
+  font-size: .8125rem
+  line-height: 1.6153846154
+  margin-bottom: 2.1538461538em
+
+.no-comments
+  border-top: 1px solid #d1d1d1
+  font-weight: 700
+  margin: 0
+  padding-top: 1.75em
+
+.form-submit
+  margin-bottom: 0
+
+.required
+  color: #000
+
+embed, iframe, object
+  margin-bottom: 1.75em
+  max-width: 100%
+  vertical-align: middle
+
+.wp-audio-shortcode, .wp-video
+  margin-top: 0
+  margin-bottom: 1.75em
+
+.wp-playlist
+  &.wp-audio-playlist
+    margin-top: 0
+    margin-bottom: 1.75em
+    padding-bottom: 0
+  .wp-playlist-tracks
+    margin-top: 0
+
+.wp-playlist-item
+  .wp-playlist-caption
+    border-bottom: 0
+    padding: .7142857143em 0
+  .wp-playlist-item-length
+    top: .7142857143em
+
+.wp-caption
+  margin-bottom: 1.75em
+  max-width: 100%
+  img[class*=wp-image-]
+    display: block
+    margin: 0
+  .wp-caption-text
+    color: #686868
+    font-size: 13px
+    font-size: .8125rem
+    font-style: italic
+    line-height: 1.6153846154
+    padding-top: .5384615385em
+
+.gallery
+  margin: 0 -1.1666667% 1.75em
+
+.gallery-item
+  display: inline-block
+  max-width: 33.33%
+  padding: 0 1.1400652% 2.2801304%
+  text-align: center
+  vertical-align: top
+  width: 100%
+
+.gallery-columns-1 .gallery-item
+  max-width: 100%
+
+.gallery-columns-2 .gallery-item
+  max-width: 50%
+
+.gallery-columns-4 .gallery-item
+  max-width: 25%
+
+.gallery-columns-5 .gallery-item
+  max-width: 20%
+
+.gallery-columns-6
+  .gallery-item
+    max-width: 16.66%
+  .gallery-caption
+    display: none
+
+.gallery-columns-7
+  .gallery-item
+    max-width: 14.28%
+  .gallery-caption
+    display: none
+
+.gallery-columns-8
+  .gallery-item
+    max-width: 12.5%
+  .gallery-caption
+    display: none
+
+.gallery-columns-9
+  .gallery-item
+    max-width: 11.11%
+  .gallery-caption
+    display: none
+
+.gallery-icon img
+  margin: 0 auto
+
+.gallery-caption
+  color: #686868
+  display: block
+  font-size: 13px
+  font-size: .8125rem
+  font-style: italic
+  line-height: 1.6153846154
+  padding-top: .5384615385em
+
+.container
+  max-width: 1020px
+
+.site-header-main
+  padding: 15px 0
+  position: relative
+  z-index: 999
+
+.max-width-container
+  max-width: 1400px
+
+.site-header
+  margin-bottom: 60px
+
+.page-template-home-page-template .site-header
+  left: 0
+  position: absolute
+  width: 100%
+  z-index: 999
+  margin: 0
+
+.nav-section
+  padding: 0
+
+.social-links-icon
+  ul
+    margin: 0
+  li
+    display: inline-block
+    margin: 0 2px
+    line-height: 1
+    .genericon
+      font-size: 18px
+
+.site, .site-inner, .carousel, .item, .active, .banner-section, .carousel-inner, .page-template-home-page-template .site-content
+  height: 100%
+
+.site-inner
+  position: relative
+
+.fill
+  width: 100%
+  height: 100%
+  background-position: center
+  background-size: cover
+  -o-background-size: cover
+
+.carousel-indicators
+  bottom: 40px !important
+  li
+    border: 3px solid #959595
+    height: 15px
+    width: 15px
+  .active
+    height: 15px
+    margin: 1px
+    width: 15px
+
+.site-footer
+  background: #eeeef2
+  bottom: 0
+  left: 0
+  padding: 15px 0 10px
+  position: fixed
+  width: 100%
+  z-index: 999
+
+.site-info
+  color: #000
+  font-size: 12px
+  font-weight: 300
+  line-height: 1.61538
+  text-align: right
+  a
+    color: #000
+    &:hover, &:focus
+      color: #000
+
+.about-page-content
+  margin-top: 110px
+
+.portfolio-item
+  bottom: 50px
+  margin-bottom: 25px
+  position: relative
+
+.port-content-inner
+  left: 0
+  position: absolute
+  right: 0
+  text-align: center
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -ms-transform: translateY(-50%)
+  transform: translateY(-50%)
+  width: 100%
+
+.port-content
+  background: rgba(253, 228, 228, 0.8)
+  bottom: 20px
+  left: 20px
+  position: absolute
+  right: 20px
+  top: 20px
+
+.port-content-inner h2
+  font-family: lato
+  font-size: 12px
+  letter-spacing: 4px
+  text-transform: uppercase
+  margin-bottom: 40px
+
+.border-btn
+  border: 1px solid #000
+  padding: 8px 16px
+  color: #000
+  display: inline-block
+
+.port-content
+  display: none
+
+.portfolio-item:hover .port-content
+  display: block
+
+.post-item-img
+  position: relative
+
+.post-link
+  background: rgba(253, 228, 228, 0.8)
+  bottom: 20px
+  left: 20px
+  position: absolute
+  right: 20px
+  top: 20px
+  display: none
+
+.post-link-inner
+  font-size: 10px
+  left: 0
+  position: absolute
+  text-align: center
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -ms-transform: translateY(-50%)
+  transform: translateY(-50%)
+  width: 100%
+
+.post-item-img:hover .post-link
+  display: block
+
+.post-item-content
+  text-align: center
+  h5
+    margin: 10px 0 6px
+    text-transform: uppercase
+
+.post-link-inner h5
+  margin-bottom: 30px
+  text-transform: uppercase
+
+.blog-page-section, .press-page-section
+  padding-bottom: 60px
+
+.post-item
+  margin-bottom: 30px
+
+.contact-page-sections
+  padding-bottom: 120px
+
+.single-post .container
+  max-width: 850px
+
+.post-page-content
+  padding-bottom: 100px
+
+.single
+  .entry-header, .entry-content
+    text-align: center
+
+ul.single-post-auther, .post-tag
+  font-style: italic
+  font-size: 12px
+  font-weight: 300
+
+ul.single-post-auther li
+  border-left: 1px solid #000
+  line-height: 1
+  margin: 0 -3px
+  padding: 0 15px
+  text-transform: capitalize
+  &:first-child
+    border-left: none
+
+.post-tag
+  margin-top: 30px
+  text-align: center
+
+.comment-form-author
+  float: left
+  width: 49%
+
+.comment-form-email
+  float: right
+  width: 49%
+
+.comment-form-comment
+  clear: both
+
+.name-date
+  margin-bottom: 10px
+
+.imageContainer
+  cursor: pointer
+  display: inline-block
+  margin: 20px
+  max-width: 150px
+  padding: 5px
+  &:hover
+    border: 2px solid #fde4e4
+
+.gallerythumbnail
+  margin-top: 24px
+  text-align: center
+
+.portfolio-big-image
+  position: relative
+
+.portfolio-btn-section
+  left: 0
+  position: absolute
+  top: 50%
+  margin-top: -13px
+  width: 100%
+  .link-btn
+    display: inline-block
+    height: 26px
+    text-indent: -5000px
+    width: 14px
+  .next-link
+    float: right
+    background: url(images/right-arrow.png) no-repeat
+  .prev-link
+    background: url(images/left-arrow.png) no-repeat
+
+.load-btn
+  button
+    background: url(images/down-arrow.png)
+    background-repeat: no-repeat
+    width: 23px
+    height: 13px
+  padding: 60px 0 50px
+  text-align: center
+
+.slick-next:before, .slick-prev:before
+  color: #000
+  font-weight: 700 !important
+
+.thumbnail-section #myGalCarousel
+  margin: 25px auto 0
+  max-width: 570px
+
+.contact-col
+  float: none !important
+  vertical-align: bottom !important
+
+@media only screen and (min-width: 768px)
+  .contact-col
+    display: inline-block
+    float: none
+    vertical-align: bottom
+    width: 49%
+  .grid.grid--table > div
+    height: auto !important
+
+@-ms-viewport
+  width: device-width
+
+
+@viewport
+  width: device-width
+
+
+@media screen and (min-width: 44.375em)
+  .site-branding
+    margin-top: 1.3125em
+    margin-bottom: 1.3125em
+  .site-title
+    font-size: 28px
+    font-size: 1.75rem
+    line-height: 1.25
+  .wp-custom-logo .site-title
+    margin-top: .5em
+  .site-description
+    display: block
+  .entry-content
+    ul
+      margin-left: 0
+      list-style: outside none none
+    ol
+      margin-left: 0
+    li >
+      ul
+        margin-left: 1.25em
+      ol
+        margin-left: 1.5em
+  .entry-summary
+    ul, ol
+      margin-left: 0
+    li >
+      ul
+        margin-left: 1.25em
+      ol
+        margin-left: 1.5em
+  .comment-content
+    ul, ol
+      margin-left: 0
+    li >
+      ul
+        margin-left: 1.25em
+      ol
+        margin-left: 1.5em
+  .comment-author
+    margin-bottom: 0
+    .avatar
+      height: 42px
+      position: relative
+      top: .25em
+      display: none
+      width: 42px
+  .comment-list
+    .children > li
+      padding-left: 1.75em
+    + .comment-respond
+      padding-top: 3.5em
+  .comment-navigation + .comment-respond
+    padding-top: 3.5em
+
+@media screen and (min-width: 56.875em)
+  .wp-custom-logo .site-header-main
+    -webkit-align-items: center
+    -ms-flex-align: center
+    align-items: center
+  .main-navigation
+    .primary-menu
+      border: 0
+      margin: 0
+      > li
+        border: 0
+    li
+      &:hover > ul, &.focus > ul
+        left: auto
+        right: 0
+    ul
+      ul
+        border-bottom: 1px solid #d1d1d1
+        display: block
+        left: -999em
+        margin: 0
+        position: absolute
+        z-index: 99999
+        ul
+          top: -1px
+          &:before, &:after
+            border: 0
+        li
+          background-color: #fff
+          border: 1px solid #d1d1d1
+          border-bottom-width: 0
+          &:hover > ul
+            left: auto
+            right: 100%
+        a
+          white-space: normal
+          width: 12.6875em
+        &:before
+          border-style: solid
+          content: ""
+          position: absolute
+          border-color: #d1d1d1 transparent
+          border-width: 0 10px 10px
+          right: 9px
+          top: -9px
+        &:after
+          border-style: solid
+          content: ""
+          position: absolute
+          border-color: #fff transparent
+          border-width: 0 8px 8px
+          right: 11px
+          top: -7px
+        li.focus > ul
+          left: auto
+          right: 100%
+        .menu-item-has-children > a
+          padding-right: 2.0625em
+          &:after
+            right: .5625em
+            top: .875em
+            -webkit-transform: rotate(90deg)
+            -ms-transform: rotate(90deg)
+            transform: rotate(90deg)
+      .dropdown-toggle.toggled-on
+        display: none
+    .menu-item-has-children > a
+      margin: 0
+      padding-right: 2.25em
+      &:after
+        content: "\f431"
+        position: absolute
+        right: .625em
+        top: .8125em
+  .dropdown-toggle
+    display: none
+  .site-footer
+    .main-navigation
+      display: none
+    .social-navigation
+      margin: 0
+      -webkit-order: 2
+      -ms-flex-order: 2
+      order: 2
+  .entry-header, .post-thumbnail, .entry-content, .entry-summary, .entry-footer, .comments-area, .image-navigation, .post-navigation, .pagination, .page-header, .page-content, .content-bottom-widgets
+    margin-right: 0
+    margin-left: 0
+  .widget
+    font-size: 14px
+    line-height: 1.6153846154
+    p, address, hr, ul, ol, dl, dd, table
+      margin-bottom: 1.6153846154em
+    li >
+      ul, ol
+        margin-bottom: 0
+    blockquote
+      font-size: 16px
+      font-size: 1rem
+      line-height: 1.3125
+      margin-bottom: 1.3125em
+      padding-left: 1.0625em
+      cite, small
+        font-size: 13px
+        font-size: .8125rem
+        line-height: 1.6153846154
+    th, td
+      padding: .5384615385em
+    pre
+      font-size: 13px
+      font-size: .8125rem
+      line-height: 1.6153846154
+      margin-bottom: 1.6153846154em
+      padding: .5384615385em
+    fieldset
+      margin-bottom: 1.6153846154em
+      padding: .5384615385em
+    button
+      font-size: 13px
+      font-size: .8125rem
+      line-height: 1.6153846154
+      line-height: 1
+      padding: .846153846em
+    select
+      font-size: 13px
+      font-size: .8125rem
+      line-height: 1.6153846154
+    textarea
+      font-size: 13px
+      font-size: .8125rem
+      line-height: 1.6153846154
+      padding: .4615384615em .5384615385em
+    input
+      &[type=button], &[type=reset]
+        line-height: 1
+        padding: .846153846em
+      &[type=text], &[type=email], &[type=url], &[type=password], &[type=search], &[type=tel], &[type=number]
+        padding: .4615384615em .5384615385em
+    h1
+      font-size: 23px
+      font-size: 1.4375rem
+      line-height: 1.2173913043
+      margin-bottom: .9130434783em
+    h2
+      line-height: 1.1052631579
+    h3
+      font-size: 16px
+      font-size: 1rem
+      line-height: 1.3125
+      margin-bottom: 1.3125em
+    h4, h5, h6
+      font-size: 13px
+      font-size: .8125rem
+      line-height: 1.6153846154
+      margin-bottom: .9130434783em
+    .alignleft
+      margin: .2307692308em 1.6153846154em 1.6153846154em 0
+    .alignright
+      margin: .2307692308em 0 1.6153846154em 1.6153846154em
+    .aligncenter
+      margin-bottom: 1.6153846154em
+    input[type=search].search-field
+      width: calc(100% - 35px)
+    .search-submit:before
+      font-size: 16px
+      left: 1px
+      line-height: 35px
+      width: 34px
+    button.search-submit
+      padding: 0
+      width: 35px
+  .widget_calendar
+    td, th
+      line-height: 2.6923076923
+      padding: 0
+  .widget_rss .rssSummary:last-child
+    margin-bottom: 1.615384615em
+  .tagcloud a
+    margin: 0 .2307692308em .5384615385em 0
+    padding: .5384615385em .4615384615em .4615384615em
+  .textwidget
+    h1
+      margin-top: 1.8260869565em
+    h2
+      margin-top: 2.2105263158em
+    h3
+      margin-top: 2.625em
+    h4
+      letter-spacing: .153846154em
+      margin-top: 3.2307692308em
+    h5, h6
+      margin-top: 3.2307692308em
+  .widecolumn
+    padding-right: 15%
+    padding-left: 15%
+
+@media screen and (min-width: 61.5625em)
+  .image-navigation
+    margin-bottom: 3.230769231em
+  .post-navigation
+    margin-bottom: 7.0em
+  .pagination
+    margin-bottom: 5.894736842em
+  .format-aside .entry-title, .format-image .entry-title, .format-video .entry-title, .format-quote .entry-title, .format-gallery .entry-title, .format-status .entry-title, .format-link .entry-title, .format-audio .entry-title, .format-chat .entry-title
+    font-size: 23px
+    font-size: 1.4375em
+    line-height: 1.304347826
+    margin-bottom: 1.826086957em
+  .post-thumbnail
+    margin-bottom: 2.625em
+  .author-info
+    border-bottom-width: 0
+    padding-bottom: 0
+  .comments-section
+    .comment-body:after
+      clear: both
+      content: ""
+      display: table
+    .comment-meta
+      float: left
+      width: 25%
+    .comment-content
+      float: left
+      padding: 0 30px
+      width: 75%
+    .reply
+      display: none
+  .comment-list + .comment-respond, .comment-navigation + .comment-respond
+    padding-top: 5.25em
+
+@media print
+  .comment-metadata
+    font-size: 9.75pt
+    .edit-link
+      display: none
+    a
+      color: #686868 !important
+  .pingback
+    .edit-link
+      display: none
+    .comment-body > a
+      box-shadow: none
+      border-bottom: 1px solid #007acc !important
+  body
+    font-size: 12pt
+    background: none !important
+    color: #000 !important
+  blockquote
+    font-size: 14.25pt
+    border-color: #1a1a1a !important
+    color: #686868 !important
+    cite, small
+      font-size: 12pt
+      color: #000 !important
+  pre
+    font-size: 12pt
+    border-color: #d1d1d1 !important
+  .entry-content
+    margin-right: 0
+    margin-left: 0
+    h4, h5, h6, .author-title
+      font-size: 12pt
+    h2
+      font-size: 17.25pt
+    h1
+      font-size: 21pt
+    h3
+      font-size: 14.25pt
+    a
+      box-shadow: none
+      border-bottom: 1px solid #007acc !important
+    blockquote
+      &.alignleft, &.alignright
+        border-width: 4px 0 0
+        padding: .9473684211em 0 0
+        width: calc(50% - .736842105em)
+  .entry-summary
+    margin-right: 0
+    margin-left: 0
+    h4, h5, h6
+      font-size: 12pt
+    h2
+      font-size: 17.25pt
+    h1
+      font-size: 21pt
+    h3
+      font-size: 14.25pt
+    a
+      box-shadow: none
+      border-bottom: 1px solid #007acc !important
+  .comment-content
+    h4, h5, h6
+      font-size: 12pt
+    h2
+      font-size: 17.25pt
+    h1
+      font-size: 21pt
+    h3
+      font-size: 14.25pt
+    a
+      box-shadow: none
+      border-bottom: 1px solid #007acc !important
+  .site-title, .page-title
+    font-size: 17.25pt
+  .comments-title
+    font-size: 17.25pt
+    border-color: #1a1a1a !important
+  .widecolumn
+    padding: 0
+    h2
+      font-size: 17.25pt
+  .site-description
+    display: block
+    font-size: 9.75pt
+    color: #686868 !important
+  .format-aside .entry-title, .format-image .entry-title, .format-video .entry-title, .format-quote .entry-title, .format-gallery .entry-title, .format-status .entry-title, .format-link .entry-title, .format-audio .entry-title, .format-chat .entry-title
+    font-size: 17.25pt
+    line-height: 1.304347826
+    margin-bottom: 1.826086957em
+  .author-bio
+    font-size: 9.75pt
+    color: #686868 !important
+  .entry-footer
+    font-size: 9.75pt
+    color: #686868 !important
+    margin-right: 0
+    margin-left: 0
+    a
+      color: #686868 !important
+  .sticky-post
+    font-size: 9.75pt
+    color: #686868 !important
+  .taxonomy-description
+    font-size: 9.75pt
+    color: #686868 !important
+    a
+      box-shadow: none
+      border-bottom: 1px solid #007acc !important
+  .entry-caption, .comment-notes, .comment-awaiting-moderation
+    font-size: 9.75pt
+    color: #686868 !important
+  .site-info
+    font-size: 9.75pt
+    color: #686868 !important
+    a
+      color: #686868 !important
+  .wp-caption .wp-caption-text, .gallery-caption
+    font-size: 9.75pt
+    color: #686868 !important
+  .site
+    background: none !important
+    margin: 5%
+  .site-branding
+    margin-top: 0
+    margin-bottom: 1.75em
+    .site-title a
+      color: #000 !important
+  .entry-title a
+    color: #000 !important
+  .comment-author
+    color: #000 !important
+    color: #686868 !important
+  .page-header
+    border-color: #1a1a1a !important
+    margin-right: 0
+    margin-left: 0
+  code, hr, abbr, acronym, table, th, td, .author-info, .no-comments
+    background-color: #d1d1d1 !important
+  .comment-list
+    article, .pingback, .trackback
+      border-color: #d1d1d1 !important
+  .site-inner
+    max-width: none
+  .site-header
+    padding: 0 0 1.75em
+  .site-main
+    margin-bottom: 3.5em
+    > article
+      margin-bottom: 3.5em
+  .entry-header, .page-content
+    margin-right: 0
+    margin-left: 0
+  .post-thumbnail
+    margin-right: 0
+    margin-left: 0
+    margin-bottom: 3.5em
+  .comments-area
+    margin-right: 0
+    margin-left: 0
+  .site-footer
+    padding: 0
+
+@media only screen and (max-width: 767px)
+  .alignleft, .alignright
+    display: block
+    float: none
+    margin: 20px auto
+  .site-info
+    text-align: center
+  .site-header
+    clear: both
+    display: block
+    margin-bottom: 50px
+  .site-footer
+    position: static
+    .social-links-icon
+      margin: 0 0 10px
+      text-align: center
+  .portfolio-item, .post-item
+    margin: 0 auto 30px
+    max-width: 360px
+  .about-page-content, .contact-page-sections .entry-content
+    margin-top: 60px
+  .press-item
+    .post-link
+      position: static
+      display: block
+      margin: 30px 0 60px
+      background: none
+    .post-link-inner
+      position: static
+      -webkit-transform: translateY(0)
+      -ms-transform: translateY(0)
+      transform: translateY(0)
+      width: 100%
+  .logo-section
+    margin-top: 15px
+  .col-sm-6.contact-col
+    &:first-child
+      width: 100%
+    &:last-child
+      margin-left: 0
+      width: 100%
+  .about-page-section
+    overflow: hidden
+
+@media only screen and (max-width: 993px)
+  .contact-col
+    width: 97% !important
+
+@media only screen and (max-width: 680px)
+  .thumbnail-section #myGalCarousel
+    max-width: 370px
+  .contact-page-sections .contact-col img
+    max-width: 100% !important
+  .about-page-content
+    width: 94% !important
+  .about-post-img
+    width: 100% !important
+  .col-sm-6.contact-col
+    &:last-child
+      margin-left: 0 !important
+      width: 99% !important
+    &:first-child
+      width: 100% !important
+
+@media only screen and (max-width: 480px)
+  .thumbnail-section
+    #myGalCarousel
+      max-width: 250px
+      margin: 8px auto 0
+    .imageContainer
+      margin: 5px
+  #showimagediv
+    height: 436px !important
+
+.col-sm-6.contact-col
+  &:first-child
+    width: 55%
+  &:last-child
+    margin-left: 13px
+    width: 40.3%
+
+.contact-col
+  vertical-align: bottom
+
+.contact-page-sections p
+  line-height: 20px
+
+.post-item-content p
+  letter-spacing: 2px
+  line-height: 15pt
+
+.container.services-list
+  padding-bottom: 170px
+
+.about-page-content p
+  font-size: 12px
+  letter-spacing: 3px
+  line-height: 24px
+
+.contact-page-sections .contact-col img
+  max-height: 695px
+  max-width: 530px
+
+.contact-col #submit
+  margin-bottom: 0
+
+.about-page-section .about-post-img img
+  max-height: 695px
+  max-width: 530px
+  width: 100%
+
+.col-sm-6
+  &.about-post-img
+    width: 55.4%
+  &.about-page-content
+    margin-left: 14px
+    width: 43.2%
+
+.services-page-section .post-item.portfoli_sizg_set, .portfolio-list .portfoli_sizg_set, .blog-page-section, .portfoli_sizg_set
+  padding: 0 12px
+
+.services-list .portfoli_sizg_set .post-item-content a
+  display: inline-block
+  margin: 20px 0
+
+.portfolio-page-section
+  .port-content
+    bottom: 43px
+    left: 30px
+    right: 30px
+  .portfolio-item
+    position: static
+  .portfolio-list
+    max-width: 845px
+
+.services-page-section .services-list, .blog-page-section .blog-list
+  max-width: 845px
+
+.about-page-content p:last-child
+  margin-bottom: 0
+
+.blog-page-section
+  .blog-list
+    .post-item-content h5
+      margin: 27px 0 12px
+    margin-bottom: 34px
+  .load-btn
+    padding: 30px 0 50px
+    text-align: center
+
+@media screen and (-webkit-min-device-pixel-ratio: 0)
+  \::-webkit-input-placeholder
+    color: #000
+
+.abt-pg
+  margin-bottom: 15% !important
+
+#showimagediv
+  -webkit-align-items: center
+  -ms-flex-align: center
+  align-items: center
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  -webkit-justify-content: center
+  -ms-flex-pack: center
+  justify-content: center
+  text-align: center
+  width: 100%
+  height: 540px
+  > img
+    max-height: 100%
+    max-width: 820px
+
+.carousel
+  margin-bottom: 0
+  padding: 0 40px 30px
+
+.carousel-control
+  left: -12px
+  &.right
+    right: -12px
+
+.carousel-indicators
+  right: 50%
+  top: auto
+  bottom: 40px !important
+  margin-right: -19px
+  li
+    background: silver
+  .active
+    background: #333
+
+.contact-page-form
+  textarea
+    background: #eee none repeat scroll 0 0
+  input
+    background: #eee none repeat scroll 0 0
+    margin-bottom: 7px
+    &[type=submit]
+      background: #fff none repeat scroll 0 0
+
+.slick-prev:before, .slick-next:before
+  color: #000 !important
+
+.banner-section #carousel-generic
+  padding: 0
+
+.menu-toggle
+  right: -14px
+
+.genericon.genericon-menu
+  color: #000
